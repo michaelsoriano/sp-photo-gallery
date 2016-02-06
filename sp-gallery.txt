@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/magnific-popup.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="sp-gallery.css" />
+<script src="sp-gallery.js"></script>
+<script>
+$(document).ready(function(){    
+  var photos = gallery('TestPhotoLib'); //change to your document library name
+  photos.init();  
+  $('#showmore').on('click', photos.showmore);
+})
+</script>
+
+<div class="photo-gallery-wrap"></div>
+<div class="showMoreWrap">
+<a id="showmore" href="#" class="btn btn-sm btn-success">Show More</a>
+</div>
+
+<script id="photogallery" type="text/x-handlebars-template">
+{{#each d}}
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 col-xxs-6 col-xxxs-12 thumbnail-wrap">
+  <a href="{{imgSrc this}}" group="{{findGroup this}}" class="thumbnail popup" style="background:url('{{imgSrcThumb this}}');" >
+    {{Name}}
+  </a>
+</div>
+{{/each}}
+</script>
