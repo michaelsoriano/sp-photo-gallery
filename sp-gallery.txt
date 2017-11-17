@@ -3,8 +3,8 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/jquery.magnific-popup.min.js"></script>
-<link rel="stylesheet" href="https://rawgit.com/michaelsoriano/sp-photo-gallery/master/sp-gallery.css" />
-<script src="https://rawgit.com/michaelsoriano/sp-photo-gallery/master/sp-gallery.js"></script>
+<link rel="stylesheet" href="CHANGE-TO-YOUR-PATH/sp-photo-gallery/master/sp-gallery.css" />
+<script src="CHANGE-TO-YOUR-PATH/sp-gallery.js"></script>
 <script>
 $(document).ready(function(){    
   var photos = gallery('TestPhotoLib'); //change to your document library name
